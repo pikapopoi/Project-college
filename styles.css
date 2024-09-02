@@ -11,8 +11,9 @@ body {
 
 /* Container */
 .container {
-    width: 85%;
-    margin: auto;
+    width: 100%; /* Set to 100% to remove extra spacing */
+    margin: 0; /* Removed auto margin */
+    padding: 0; /* Ensure padding is set to 0 */
     overflow: hidden;
 }
 
@@ -27,6 +28,8 @@ body {
 }
 
 .custom-navbar .container {
+    width: 85%; /* Keep the container width for the navbar as it was */
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -125,13 +128,19 @@ body {
 
 /* Slideshow Container */
 .slideshow-container {
-    max-width: 100%;
+    width: calc(100% - 40px); /* Adjust width to account for equal margins on all sides */
     height: auto;
     position: relative;
-    margin: 20px auto;
+    margin: 20px; /* 20px margin on all sides (top, right, bottom, left) */
+    padding: 0; /* Ensure no extra padding inside the container */
     overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px; /* Add rounded corners */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Optional: add some shadow for depth */
+    transition: transform 0.3s ease; /* Add smooth transform effect */
+}
+
+.slideshow-container:hover {
+    transform: scale(1.02); /* Slightly enlarge the container on hover */
 }
 
 /* Slideshow Images */
@@ -141,22 +150,64 @@ body {
     max-height: 600px;
     object-fit: cover;
     display: block;
+    border-radius: 20px; /* Match the border-radius of the container */
+    transition: opacity 1s ease-in-out; /* Add smooth fade transition */
 }
 
 /* Slideshow Text Overlay */
 .text {
+    position: absolute;
+    bottom: 20px; /* Positioned 20px from the bottom of the container */
+    left: 50%;
+    transform: translateX(-50%);
     color: #FFFF99; /* Light Yellow */
     font-size: 20px;
     padding: 12px;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
     background-color: rgba(128, 0, 0, 0.6); /* Slightly transparent maroon */
     border-radius: 8px;
     text-align: center;
     width: 75%;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    animation: fadeInText 1s ease forwards; /* Text fade-in effect */
+}
+
+/* Text Fade-in Animation */
+@keyframes fadeInText {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Navigation Controls */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.3); /* Semi-transparent background */
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8); /* Darken background on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 3px 3px 0;
 }
 
 /* Dots */
@@ -172,11 +223,12 @@ body {
     background-color: #FFFF99; /* Light Yellow */
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 0.6s ease;
+    transition: background-color 0.6s ease, transform 0.3s ease; /* Add transform transition */
 }
 
 .active {
     background-color: #FF5733; /* Slightly darker orange */
+    transform: scale(1.2); /* Enlarge the active dot */
 }
 
 /* Fade animation */
@@ -200,7 +252,7 @@ body {
 /* Responsive Adjustments for Large Screens */
 @media (min-width: 1200px) {
     .slideshow-container {
-        max-width: 1200px;
+        max-width: 100%;
     }
 
     .text {

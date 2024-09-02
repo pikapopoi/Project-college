@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SSCCS</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Get in touch with Shree Swaminarayan College Of Computer Science for inquiries about our programs, admissions, or any other questions.">
+    <meta name="keywords" content="contact SSCCS, computer science inquiries, IT education, get in touch">
+    <meta name="author" content="SSCCS">
+</head>
+<body>
+    <header>
+        <nav class="custom-navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="swaminarayan-logo.png" alt="Swaminarayan Logo">
+                        <h1>SSCCS</h1>
+                    </a>
+                </div>
+                <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have any questions? We'd love to hear from you. Get in touch with us for more information about our programs, admissions process, or any other inquiries.</p>
+            <form action="submit_contact.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="map">
+                <h3>Our Location</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.122937636494!2d-122.41941558468173!3d37.77492977975808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085818a4e622bbf%3A0xf12ba4885b54f8b5!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1587742212841!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Harsh Rathi</p>  
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

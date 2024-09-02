@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Swaminarayan College Of Computer Science</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Shree Swaminarayan College Of Computer Science provides world-class education in computer science and IT.">
+    <meta name="keywords" content="computer science, IT education, SSCCS, technology courses, computer applications">
+    <meta name="author" content="SSCCS">
+</head>
+<body>
+    <header>
+        <nav class="custom-navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="swaminarayan-logo.png" alt="Swaminarayan Logo">
+                        <h1>Shree Swaminarayan Gurukul</h1>
+                    </a>
+                </div>
+                <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="slideshow">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="./education1.png" alt="Empowering Future Innovators" class="slide-image">
+                <div class="text">Empowering Future Innovators</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="./education2.png" alt="World-Class Computer Science Education" class="slide-image">
+                <div class="text">World-Class Computer Science Education</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="./education3.png" alt="Join Our Tech Community" class="slide-image">
+                <div class="text">Join Our Tech Community</div>
+            </div>
+            <!-- Navigation Controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2>About Shree Swaminarayan College Of Computer Science</h2>
+            <p>Shree Swaminarayan College Of Computer Science is dedicated to providing world-class education in computer science, fostering innovation, and preparing students for a tech-driven future.</p>
+        </div>
+    </section>
+
+    <section class="courses">
+        <div class="container">
+            <h2>Our Courses</h2>
+            <div class="course-list">
+                <div class="course-item">
+                    <h3>B.C.A.</h3>
+                    <p>Bachelor of Computer Application, a 3-year undergraduate course focusing on technological applications.</p>
+                    <a href="bca.html" class="read-more">Read More</a>
+                </div>
+                <div class="course-item">
+                    <h3>B.Sc.IT</h3>
+                    <p>Bachelor of Science in Information Technology, focusing on software development and engineering.</p>
+                    <a href="bsc-it.html" class="read-more">Read More</a>
+                </div>
+                <div class="course-item">
+                    <h3>M.Sc.IT</h3>
+                    <p>Master of Science in IT, focusing on advanced theoretical and practical aspects of IT.</p>
+                    <a href="msc-it.html" class="read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Harsh Rathi</p>
+            <p>123 Main Street, City, Country | +123 456 7890 | info@ssccs.edu</p>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

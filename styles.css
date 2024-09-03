@@ -6,20 +6,20 @@ body {
     line-height: 1.8;
     color: #1A1A1A;
     background-color: #F5F5F5;
-    font-size: 18px; /* Increased font size */
+    font-size: 18px;
 }
 
 /* Container */
 .container {
-    width: 100%; /* Set to 100% to remove extra spacing */
-    margin: 0; /* Removed auto margin */
-    padding: 0; /* Ensure padding is set to 0 */
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
     overflow: hidden;
 }
 
 /* Navbar Styles */
 .custom-navbar {
-    background-color: #FF5733; /* Slightly darker orange */
+    background-color: #FF5733;
     position: sticky;
     top: 0;
     width: 100%;
@@ -28,7 +28,7 @@ body {
 }
 
 .custom-navbar .container {
-    width: 85%; /* Keep the container width for the navbar as it was */
+    width: 85%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -50,7 +50,7 @@ body {
 .logo h1 {
     font-family: 'Crimson Text', serif;
     margin: 0;
-    color: #FFFF99; /* Light Yellow */
+    color: #FFFF99;
     font-size: 24px;
     display: inline-block;
     vertical-align: middle;
@@ -68,7 +68,7 @@ body {
 }
 
 .nav-links a {
-    color: #FFFFFF; /* White */
+    color: #FFFFFF;
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px 20px;
@@ -78,7 +78,7 @@ body {
 
 .nav-links a:hover,
 .nav-links a.active {
-    background-color: #C70039; /* Deep red */
+    background-color: #C70039;
     transform: scale(1.1);
 }
 
@@ -92,7 +92,7 @@ body {
 .menu-icon span {
     height: 3px;
     width: 25px;
-    background: #FFFF99; /* Light Yellow */
+    background: #FFFF99;
     margin: 4px 0;
     transition: transform 0.3s ease;
 }
@@ -103,14 +103,14 @@ body {
         position: fixed;
         right: 0;
         top: 0;
-        background-color: rgba(255, 87, 51, 0.95); /* Semi-transparent background */
+        background-color: rgba(255, 87, 51, 0.95);
         flex-direction: column;
         width: 100%;
         height: 100vh;
         justify-content: center;
         align-items: center;
         display: none;
-        z-index: 999; /* Ensure it stays on top */
+        z-index: 999;
     }
 
     .nav-links.active {
@@ -128,19 +128,19 @@ body {
 
 /* Slideshow Container */
 .slideshow-container {
-    width: calc(100% - 40px); /* Adjust width to account for equal margins on all sides */
+    width: calc(100% - 40px);
     height: auto;
     position: relative;
-    margin: 20px; /* 20px margin on all sides (top, right, bottom, left) */
-    padding: 0; /* Ensure no extra padding inside the container */
+    margin: 20px;
+    padding: 0;
     overflow: hidden;
-    border-radius: 20px; /* Add rounded corners */
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Optional: add some shadow for depth */
-    transition: transform 0.3s ease; /* Add smooth transform effect */
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 
 .slideshow-container:hover {
-    transform: scale(1.02); /* Slightly enlarge the container on hover */
+    transform: scale(1.02);
 }
 
 /* Slideshow Images */
@@ -150,26 +150,26 @@ body {
     max-height: 600px;
     object-fit: cover;
     display: block;
-    border-radius: 20px; /* Match the border-radius of the container */
-    transition: opacity 1s ease-in-out; /* Add smooth fade transition */
+    border-radius: 20px;
+    transition: opacity 1s ease-in-out;
 }
 
 /* Slideshow Text Overlay */
 .text {
     position: absolute;
-    bottom: 20px; /* Positioned 20px from the bottom of the container */
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    color: #FFFF99; /* Light Yellow */
+    color: #FFFF99;
     font-size: 20px;
     padding: 12px;
-    background-color: rgba(128, 0, 0, 0.6); /* Slightly transparent maroon */
+    background-color: rgba(128, 0, 0, 0.6);
     border-radius: 8px;
     text-align: center;
     width: 75%;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
     opacity: 0;
-    animation: fadeInText 1s ease forwards; /* Text fade-in effect */
+    animation: fadeInText 1s ease forwards;
 }
 
 /* Text Fade-in Animation */
@@ -192,12 +192,12 @@ body {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    background-color: rgba(0,0,0,0.3); /* Semi-transparent background */
+    background-color: rgba(0,0,0,0.3);
 }
 
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8); /* Darken background on hover */
-    transform: scale(1.1); /* Slightly enlarge on hover */
+    background-color: rgba(0,0,0,0.8);
+    transform: scale(1.1);
 }
 
 .prev {
@@ -220,15 +220,15 @@ body {
     height: 14px;
     width: 14px;
     margin: 0 4px;
-    background-color: #FFFF99; /* Light Yellow */
+    background-color: #FFFF99;
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 0.6s ease, transform 0.3s ease; /* Add transform transition */
+    transition: background-color 0.6s ease, transform 0.3s ease;
 }
 
 .active {
-    background-color: #FF5733; /* Slightly darker orange */
-    transform: scale(1.2); /* Enlarge the active dot */
+    background-color: #FF5733;
+    transform: scale(1.2);
 }
 
 /* Fade animation */
@@ -279,7 +279,7 @@ body {
 }
 
 .course-item {
-    background: #FFF8DC; /* Cornsilk */
+    background: #FFF8DC;
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
@@ -293,32 +293,51 @@ body {
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Adjustments for Small Screens */
-@media (max-width: 768px) {
-    .course-item {
-        flex-basis: 100%; /* Make each course item take up the full width */
-        margin: 10px 0; /* Adjust margins for better spacing */
-    }
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #FF5733;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-@media (max-width: 480px) {
-    .course-item {
-        padding: 15px; /* Reduce padding for very small screens */
-        margin: 10px 0; /* Ensure there's still space between items */
-    }
+.read-more:hover {
+    background-color: #C70039;
+    transform: scale(1.05);
+}
 
-    .course-item h3 {
-        font-size: 18px; /* Slightly smaller font for course titles */
-    }
+/* Course Details Section */
+.course-details {
+    background: #FFF8DC;
+    padding: 40px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
 
-    .course-item p {
-        font-size: 16px; /* Slightly smaller font for course descriptions */
-    }
+.course-details h2 {
+    font-size: 28px;
+    color: #FF5733;
+    margin-bottom: 20px;
+}
 
-    .read-more {
-        padding: 8px 16px; /* Adjust button size */
-        font-size: 14px; /* Smaller font for buttons */
-    }
+.course-details p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.course-details a {
+    color: #C70039;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.course-details a:hover {
+    text-decoration: underline;
 }
 
 /* Footer */
@@ -392,4 +411,64 @@ form button:hover {
     border-radius: 10px;
     border: none;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Adjustments for Small Screens */
+@media (max-width: 768px) {
+    .course-item {
+        flex-basis: 100%;
+        margin: 10px 0;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .course-details {
+        padding: 30px;
+    }
+
+    .course-details h2 {
+        font-size: 24px;
+    }
+
+    .course-details p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .course-item {
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .course-item h3 {
+        font-size: 18px;
+    }
+
+    .course-item p {
+        font-size: 16px;
+    }
+
+    .read-more {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .course-details {
+        padding: 20px;
+    }
+
+    .course-details h2 {
+        font-size: 22px;
+    }
+
+    .course-details p {
+        font-size: 15px;
+    }
+
+    .container {
+        width: 95%;
+    }
 }
